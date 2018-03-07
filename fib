@@ -1,0 +1,42 @@
+import java.lang.Math; // headers MUST be above the first class
+
+// one class needs to have a main() method
+public class HelloWorld
+{
+  
+  
+  
+  
+  public static int func(int i)
+  {
+  //System.out.println(i);
+    if(i<1)
+      return 0;
+    else if(i<=2)
+      return 1;
+    else
+    return func(i-1)+func(i-2);
+   
+  }
+  
+  
+  // arguments are passed using the text field below this editor
+  public static void main(String[] args)
+  {
+    //OtherClass myObject = new OtherClass("Hello World!");
+  // System.out.print(func(5));
+   // func(8);
+   //func();
+   int n=20;
+    for(int i =0; i< n; i++)
+    {
+      System.out.println(func(i));
+    }
+  }
+  
+  
+  
+  
+  
+  
+}
